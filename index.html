@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie's Choice</title>
+    <link rel="icon" type="image/png" href="imgs/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="wrapper">
+        <section class="header">
+            <h1> Foodie's Choice</h1>
+            <p>Pick a category & explore tasty meals</p>
+            <select id="categorySelect">
+                <option disabled selected>Select category</option>
+                <option value="Beef">Beef</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Pasta">Pasta</option>
+            </select>
+        </section>
+
+        <section id="cardsArea"></section>
+
+        <div id="infoModal" class="modalBox">
+            <div class="modalBody">
+                <span id="modalCloseBtn" class="closeBtn">&times;</span>
+                <h2 id="mealName"></h2>
+                <img id="mealImg" src="" alt="" />
+                <h3>Ingredients</h3>
+                <ul id="ingList"></ul>
+                <h3>Steps</h3>
+                <p id="mealSteps"></p>
+                <a id="ytLink" href="#" target="_blank">▶ Watch Tutorial</a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
